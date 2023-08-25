@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 900px;
+  height: 500px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.box {
+  position: absolute;
+  top: 350px;
+  left: 200px;
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.arrow {
+  border: none;
+  background-color: transparent;
+}
+.step {
+  display: flex;
+  gap: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.up {
+  width: 7px;
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.next {
+  color: grey;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  }
+  .container {
+    flex-direction: column;
+    height: 100%;
+    border-radius: 0%;
+  }
+  .ela {
+    content: url(./images/illustration-woman-online-mobile.svg);
+  }
+  .box {
+    top: 45px;
+    left: 5px;
+  }
+  .next {
+    width: 300px;
+  }
+}
